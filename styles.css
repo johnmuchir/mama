@@ -519,6 +519,40 @@ button {
     font-size: 14px;
 }
 
+@media  (min-width: 780px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    main {
+        margin-top: 3.5rem;
+        width: 50%;
+        margin-left: 21%;
+        margin-right: 5px;
+    }
+    .nav-container {
+        width: 20%;
+        position: fixed;
+        left: 0;
+        top: 5px;
+    }
+    .popup-content {
+        width: 50%;
+        margin-right: 10rem;
+    }
+    .comment-form {
+        width: 49%;
+    }
+    
+}
+
+@media (max-width: 780px) {
+    .right-side {
+        display: none;
+    }
+}
+
   
 
 
