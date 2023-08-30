@@ -33,5 +33,132 @@
             </a>
         </nav>
     </div>
+    <main>
+        <div class="post-container">
+            <div class="main-post">
+                <span class="post-profile-image">
+                    <img src="images\my 3.jpg" alt="" class="post-profile-image">
+                </span>
+                
+                <form id="post-form">
+                    <textarea id="post-input" rows="3" placeholder="Enter your post"></textarea>
+                    <button type="submit" id="post-button">Post</button>
+                </form>
+            </div>
+            <div class="border"></div>
+            <div class="post-images">
+                <input type="file" id="image-upload" accept="image/*" />
+                <button onclick="uploadImage()" class="upload-image">post image</button>
+                <Image src='images\photo.png' alt='' class="camera" >
+                <h6>Image</h6> 
+            </div>
+            
+        </div>
+        
+        <div class="main-posts">
+            <div class="posts-container">
+                <div class="posts">
+                    <div class="posts-image">
+                        <div class="posts-profile-image">
+                            <img src="images\my 3.jpg" alt="" class="posts-profile-image">
+                        </div>
+                   
+                        <span >
+                            <h5 id="name">John Joe</h5>
+                            <p class="posts-hours">3 hours ago</p>
+                        </span>  
+                    </div>
+                </div>
+                <div class="dot-icon">
+                    <img src="images\dots.png" alt="" class="camera">
+                </div> 
+            </div>
+            <!--             POSTS INPUT          -->
+            <div id="posted-content">  
+            </div>
+            <div class="slider-container">
+                <div class="slider"></div>
+                <div class="dots"></div>
+            </div>
+            <!---             POSTS PHOTO          -->
+            <!---              LIKE    BUTTONS      -->
+            
+            <div class="like-buttons">
+                <div class="buttons">
+                    <div class="like-button">
+                        <img src="images\like.png" alt="" class="like-button">
+                    
+                        <img src="images\heart.png" alt="" class="heart-button">
+                    
+                        <p class="button-text" id="likeCount">0</p>
+                    </div>
+                </div>
+                <div class="comment-count">
+                    <span class="count">0</span> Comments
+                </div>
+                
+            </div>
+
+            <div class="border"></div>
+            <div class="comment-like">
+                <div class="share" id="likeButton">
+                    <h4>Like</h4>
+                </div>
+                <div class="share" id="openButton">
+                    <h4>Comments</h4>
+                </div>
+                <div class="share" id="shareButton">
+                    <h4>Share </h4>
+                </div>
+            </div>  
+            <div class="border"></div>
+            
+        </div>
+        
+        <div id="popupContainer" class="popup-container">
+            <div class="popup-content">
+                <div class="comment-box">
+                    <div class="comment-form">
+                        <div class="comment-home">
+                            <button id="closeButton"></button>
+                            <a href="">
+                                <img src="images/previous.png" alt="" class="previous">
+                            </a>
+                        </div>
+                        <textarea id="comment" rows="3" placeholder="Write your comment"></textarea>
+                        <button id="submit-comment">Submit</button>
+                    </div>
+                    <div class="comments">
+                        <div class="comments-section">
+                            <div class="comment-list">  <!--when reply is clicked it signals textarea which you type the reply and submit it -->
+                    
+                            </div>
+                            <div class="comment-reply"></div>
+                    
+                        </div>
+                    </div>
+                    <!-- Add these elements inside your .comments-section div -->
+                    
+                    <div class="notifications">
+                        <p class="notification-text">New reply added!</p>
+                    </div>
+                     
+            
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+    <form class="right-side">
+        <div class="right-search">
+            <h3>Search</h3>
+            <input type="text" placeholder="Search here" class="search">
+
+        </div>
+       
+    </form>
+
+    
 </body>
 </html>
